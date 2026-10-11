@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav's AI Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Gaurav Bhoyar</h1>
+        <p>AI-Powered Portfolio Assistant</p>
+        
+<div class="suggestions">
+    <button type="button" class="suggestion">What are Gaurav's skills?</button>
+    <button type="button" class="suggestion">Tell me about his projects</button>
+    <button type="button" class="suggestion">What is his educational background?</button>
+</div>
+
+        <div id="chat-box">
+            <div class="message assistant">
+                Hi! Ask me about Gaurav's skills, projects, or education.
+            </div>
+        </div>
+
+        <form id="chat-form">
+            <input
+                type="text"
+                id="message-input"
+                placeholder="Ask me anything..."
+                autocomplete="off"
+                required
+            >
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
